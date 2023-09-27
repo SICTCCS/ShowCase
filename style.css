@@ -91,12 +91,14 @@ footer img {
     max-height: 50px;
     vertical-align: middle;
     margin-right: 10px;
+    margin-bottom: 25px;
 }
 
 .header-content h2 {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
+    margin-bottom: 25px;
 }
 
 * {box-sizing:border-box}
@@ -172,4 +174,6 @@ footer img {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
 
