@@ -243,6 +243,7 @@ img {vertical-align: middle;}
         color: #fff;
         padding: 10px;
         text-align: center;
+        border-radius: 10px;
     }
     
     nav ul {
