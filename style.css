@@ -8,6 +8,7 @@
 
 header {
     display:flex;
+    border-radius: 10px;
     
 }
 
@@ -17,6 +18,7 @@ header {
     flex-direction: row;
     /* margin:50%; */
     margin-left: 25%;
+
 }
 
 .cube-container {
