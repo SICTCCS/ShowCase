@@ -60,8 +60,7 @@
 - Make sure you only include content in the snip DO NOT include the url bar, scroll bar, or the taskbar
 - Here is a short video that shows you what I mean
 ![](Markdown/howToSlide.gif)
-- I recommend saving the slides named (slide1.png/slide2.png) 
-- It is simple and easy to navigate 
+- I recommend saving the slides named (slide1.png/slide2.png) so it is simple and easy to navigate 
 - We also don't have to worry about naming them the same as another file because they are in their own personal folder
 - Once you have all your snips for your slides we need to implement them into the code
 - Navigate back to where the slides are in the code and change the image path to where we just made our new folder and put our snips
@@ -70,5 +69,108 @@
 
 
  ### Logo
+ - Now we need to change the logo and title
+ - Navigate to this location close to the top of the section
+ ![](Markdown/ss13.PNG)
+ - To make a logo to match the others we need to make a 500x500px logo
+ - I recommend using pixlr.com
+ - Once you get there click on Pixlr E editor
+ - Then click create new
+ - On the right-hand side of the popup change the width to 500 and the height to 500 then click create
+ - Since I'm using amazon for this example I'm going to use an Amazon logo from the web
+ ![](Markdown/ss14.PNG)
+ - This is what mine looked like before I saved it
+ - We are going to want to save this file in the Images folder in the Showcase file (you should see the other website logos there)
+ ![](Markdown/ss15.PNG)
+ - Change the image path to the new logo
+ - Now we just need to change the title which is right below the image path
+ ![](Markdown/ss16.PNG)
+ - Once we have completed this we are done with the HTML of adding a website
+
+ ## Step 4: Modification of JavaScript
+ - Modifying the JavaScript isn't too hard it just requires a little bit of copying and pasting and changine some numbers here and there
+ - First start by navigating to script.js
+ - Once your there first thing we are going to do is add another let SlideIndex
+ ![](Markdown/ss17.PNG)
+ - The highlighted code is what I added (there needs to be a new slideIndex for every website on the showcase)
+ - Next we need to add another showSlides function<br>
+![](Markdown/ss18.PNG)
+ Like this
  
+ - Now we need to copy one of the function showSlides()
+ ![](Markdown/ss19.PNG)
+ - Once we have this copied ... scroll to the bottom and paste
+ - Now it's time to modify the code
+ - We need to change:
+ - showSlides#
+ - slides#
+ - dots#
+ - slideIndex#
+ - mySlides#
+ ### We'll start with showSlides#
+ - First change is in the first line<br>
+ ![](Markdown/ss20.PNG)<br>
+
+ - Second change is in the last line<br>
+ ![](Markdown/ss21.PNG)
+
+ ### slides#
+ - There's a few more of these to change so let's get started
+ - Anywhere you see the word "slides" in the function add the number of your website to the end
+ - This is what your function should look like currently
+ ![](Markdown/ss22.PNG)
+
+ ### dots#
+ - We now do the same thing for everytime we see the word "dots"
+ - Here is what your function should look like after this step
+![](Markdown/ss23.PNG)
+- DISCLAIMER!: I forgot to change the dot text in the third line of code in the function at the end where "dot" is in parenthesis it should be "dot5"
+
+### slideIndex#
+- And finally we do the same for everytime you see "slideIndex"
+- Updated function below
+![](Markdown/ss24.PNG)
+
+### !!DOUBLE CHECK MAKE SURE YOU MODIFIED EACH WORD DISCUSSED ELSE YOUR CODE WILL BREAK!! 
+
+### mySlides#
+- Our last step in the script.js file is changing the mySlides class number
+- This is what allows it to communicate with out HTML & CSS so this step is VERY IMPORTANT! yet very simple
+- It should be at the end of the second line of code inside the function
+![](Markdown/ss25.PNG)
+
+## Step 5: Modification of CSS
+- Navigate to style.css
+- We only need to alter 4 lines of code in the file (2 of them are the same altercation)
+- You can either Ctrl-F and search "mySlides" or navigate to line 167 (if you changed any css code this line number may be inaccurate)
+- Once you find the line with the other mySlides class functions we are going to add our new one
+- Example below
+![](Markdown/ss26.PNG)
+- Make sure you add the . before the class
+- Also don't forgot the comma that splits the classes
+
+- Now since we have both a desktop layout and mobile layout we have to do this exact same altercation lower in the CSS code
+- So you can either navigate by using Ctrl-F again or go to line 339 (once again if you've changed any code the line number may be different)
+- Do the same procedure we just performed before 
+- And bam should look like this
+![](Markdown/ss27.PNG)
+- Now since we are already towards the bottom of the code we are going to go ahead and add our dots class
+- If you scroll down around 20 lines you should be able to find the style function
+- If you're not able to find it try doing Ctrl-F ".dot" or look at line 370
+- Simply add our new dot class to the end (remember not to forget the . or ,)
+- Should look like this
+![](Markdown/ss28.PNG)
+- Now we are on our last step 
+- We need to navigate to the other part where the dot classes are
+- Use or previous methods to locate it or look at line 199
+![](Markdown/ss29.PNG)
+- We are now done with the CSS
+
+## Step 6: Check it out!
+- Go to the showcase folder and open the index.html file in a browser
+![](Markdown/ss30.PNG)
+- BOOM! We have officially added a website to the showcase
+- Make sure everything looks correct and the slides are cycling
+- If everything looks good you have successfully learned and added a new website to the showcase!
+
   
