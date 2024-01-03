@@ -10,7 +10,7 @@
 ## Step 2
  - Your VSC should look like this currently<br>
  ![](Markdown/ss1.PNG)<br>
- - First, take a like at the website 1 code<br>
+ - First, take a look at the website 1 code<br>
  ![](Markdown/ss2.PNG)<br>
  - There are start & end comments for every website to help you find the locations
  - Let's take a look and understand the code within
